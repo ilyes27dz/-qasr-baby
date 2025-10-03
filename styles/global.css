@@ -1,0 +1,104 @@
+/* global styles for Qasr Baby shop */
+/* استيراد خط Cairo من Google Fonts (fallback محلي إذا لزم) */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+:root{
+  --accent: #ff9800;
+  --accent-dark: #e68900;
+  --success: #2e7d32;
+  --muted: #777;
+  --bg: #fffdf8;
+  --card: #fff;
+  --border: #ffe0b2;
+}
+
+/* Reset بسيط */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body,#__next { height: 100%; }
+body {
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  background: linear-gradient(120deg, #fffde4 0%, #e3ffe8 100%);
+  color: #222;
+  direction: rtl; /* واجهة عربية افتراضية */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* صورة افتراضية للروابط */
+a { color: var(--accent); text-decoration: none; }
+
+/* حاويات */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* أزرار عامة */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: linear-gradient(90deg,var(--accent) 40%, #81c784 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(255,152,0,0.18);
+}
+.btn-ghost {
+  background: #fff;
+  color: var(--accent);
+  border: 1.5px solid var(--border);
+}
+
+/* بطاقات */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
+  padding: 14px;
+}
+
+/* هيدر ثابت */
+.site-header { position: sticky; top: 0; z-index: 50; background: #fff; }
+
+/* توست/لافتة أسفل الشاشة */
+.toast-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+.toast-banner .banner {
+  pointer-events: auto;
+  width: min(920px, 95%);
+  background: linear-gradient(90deg,#fff 0%, #fffde4 100%);
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* تأثير الاضافة الصاعد +1 */
+@keyframes flyUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-36px) scale(1.05); opacity: 0; }
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .container { padding: 0 12px; }
+  .btn { padding: 10px 12px; font-size: 14px; }
+}

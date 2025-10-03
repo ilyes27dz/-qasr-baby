@@ -1,0 +1,33 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #ff9800 10%, #ffd180 60%, #81c784 100%);
+  box-shadow: 0 2px 8px #c8e6c944;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.navLink {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 12px;
+  position: relative;
+  transition: color 0.2s;
+}
+.navLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .2s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.navLink:hover {
+  color: #1565c0;
+}
+.navLink:hover::after {
+  width: 100%;
+}

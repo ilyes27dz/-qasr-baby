@@ -1,0 +1,19 @@
+{
+  "storeName": "Palais du Bébé",
+  "home": "Accueil",
+  "shop": "Boutique",
+  "categories": "Catégories",
+  "tracking": "Suivi de commande",
+  "login": "Connexion",
+  "cart": "Panier d’achats",
+  "welcome": "Bienvenue au Palais du Bébé",
+  "bestChoice": "Le meilleur choix pour les vêtements et articles pour enfants",
+  "description": "Tout ce dont votre bébé a besoin en un seul endroit : vêtements, jouets, soins, articles pour nouveau-nés et plus.",
+  "startShopping": "Commencez vos achats",
+  "fastDelivery": "Livraison rapide",
+  "fastDeliveryDesc": "Recevez votre commande en 1 à 2 jours partout.",
+  "premiumQuality": "Haute qualité",
+  "premiumQualityDesc": "Produits authentiques et matériaux soigneusement sélectionnés.",
+  "cashOnDelivery": "Paiement à la livraison",
+  "cashOnDeliveryDesc": "Payez seulement à la réception de votre commande."
+}
